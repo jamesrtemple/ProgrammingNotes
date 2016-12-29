@@ -1,0 +1,48 @@
+* NODE Session
+He used the express library to get basic http framework.
+
+Morgan was the logging package
+
+Jade framework for serving web pages
+
+Used stylus framework for the CSS styling
+
+Express can create the whole application directory structure for you.
+
+Check yeoman.io for code generators.
+
+Express mewApp
+Creates applicationewApp
+
+Async java script
+See async.js
+See promises library
+
+* Dotnetdave
+Style cop
+Code it.right
+Vs analyze
+Check out clean code on plural sight
+
+* Pragmatic Software Development
+What are the questions we eed to answer and how can we answer them? 
+Minimum Viable Product (MVP)
+Check out lean patterns and practices.
+
+Tiers are physical, Layers are logical
+
+When using repository pattern, the Repository references back to the
+business objects to get definitions of POCOs.
+
+Level 1 Arch is a big fat binary and Level 3 is a highly stratified
+arch that depends on interfaces rather than concretes. What is a
+level 2?
+
+See architectural level feature comparison charts. That is a nice
+thing to have for reference.
+
+Patterns of Enterprise Application Architecture by Martin Fowler
+
+
+
+
