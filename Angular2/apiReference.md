@@ -4,11 +4,11 @@ CurrencyPipe, JsonPipe, PercentPipe, UpperCasePipe, DatePipe, DecimalPipe, Lower
 AsyncPipe, I18nPluralPipe, I18nSelectPipe
 
 *Classes*
+?
 HashLocationStrategy, NgLocalization, Location, LocationStrategy, PlatformLocation, CommonModule, PathLocationStrategy
 
 *Directives*
-NgSwitch, NgFor, NgSwitchCase, NgIf, NgSwitchDefault
-NgClass, NgPlural, NgTemplateOutlet, NgPluralCase, NgStyle
+NgClass, NgSwitch, NgFor, NgSwitchCase, NgIf, NgSwitchDefault, NgPlural, NgPluralCase, NgStyle
 
 *Interfaces*
 ?
@@ -20,21 +20,21 @@ APP_BASE_HREF, VERSION
 
 ## core
 *Decorators*
-Component, Directive, Injectable
-ContentChild, ContentChildren, Host, Inject, Optional, Self, SkipSelf, Type, ViewChild, ViewChildren
+Component, Directive, Inject, Injectable, Host, ViewChild, ViewChildren
+ContentChild, ContentChildren, Optional, Self, SkipSelf, Type
 
 *Classes*
-ChangeDetectorRef, EventEmitter, OnChanges, OnDestroy, OnInit, SimpleChange
-AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, ApplicationRef, CollectionChangeRecord, Compiler, ComponentFactory, ComponentFactoryResolver, ComponentRef, DefaultIterableDiffer, DoCheck, ElementRef, ErrorHandler, Injector, IterableDiffers, KeyValueChangeRecord, KeyValueDiffers, NgModuleFactoryLoader, NgModuleRef, OpaqueToken, PlatformRef, Query, QueryList, ReflectiveInjector, Sanitizer, TemplateRef, Version, ViewContainerRef, ViewRef, WrappedValue
+ApplicationRef, AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, ChangeDetectorRef, Compiler, DoCheck, EventEmitter, OnChanges, OnDestroy, OnInit, SimpleChange, ElementRef
+
+CollectionChangeRecord, ComponentFactory, ComponentFactoryResolver, ComponentRef, DefaultIterableDiffer, ErrorHandler, Injector, IterableDiffers, KeyValueChangeRecord, KeyValueDiffers, NgModuleFactoryLoader, NgModuleRef, OpaqueToken, PlatformRef, Query, QueryList, ReflectiveInjector, Sanitizer, TemplateRef, Version, ViewContainerRef, ViewRef, WrappedValue
 
 *Interfaces*
-Input, NgModule, Output, Pipe, SimpleChanges
+Input, NgModule, Output, Pipe, SimpleChanges, HostBinding, PipeTransform
 
-Attribute, ClassDefinition, ClassProvider, ExistingProvider, FactoryProvider, HostBinding, HostListener, IterableDiffer, IterableDifferFactory, KeyValueDiffer, KeyValueDifferFactory, ModuleWithProviders, PipeTransform, TrackByFn, TypeProvider, ValueProvider
+Attribute, ClassDefinition, ClassProvider, ExistingProvider, FactoryProvider, HostListener, IterableDiffer, IterableDifferFactory, KeyValueDiffer, KeyValueDifferFactory, ModuleWithProviders, TrackByFn, TypeProvider, ValueProvider
 
 *Functions*
-enableProdMode
-Class
+Class, enableProdMode
 
 *Enumerations*
 ChangeDetectionStrategy, ViewEncapsulation
@@ -52,15 +52,16 @@ CUSTOM_ELEMENTS_SCHEMA, VERSION
 ## forms
 *Directives*
 NgForm, NgModel
+
 CheckboxControlValueAccessor, DefaultValueAccessor, FormArrayName, FormControlDirective, FormControlName, FormGroupDirective, FormGroupName, MaxLengthValidator, MinLengthValidator, NgControlStatus, NgControlStatusGroup, NgModelGroup, NgSelectOption, PatternValidator, RadioControlValueAccessor, RequiredValidator, SelectControlValueAccessor, SelectMultipleControlValueAccessor
 
 *Classes*
-?
-AbstractControl, AbstractControlDirective, AbstractFormGroupDirective, ControlContainer, FormArray, FormBuilder, FormControl, FormGroup, FormsModule, NgControl, ReactiveFormsModule, Validators
+AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators
+AbstractControlDirective, AbstractFormGroupDirective, ControlContainer, NgControl
 
 *Interfaces*
-?
-AsyncValidatorFn, ControlValueAccessor, Form, Validator, ValidatorFn
+Form, Validator
+AsyncValidatorFn, ControlValueAccessor, ValidatorFn
 
 *Constants*
 ?
