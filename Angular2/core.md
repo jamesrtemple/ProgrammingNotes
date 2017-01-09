@@ -35,16 +35,13 @@ Compiler
 @Component, ComponentFactory, ComponentFactoryResolver, ComponentRef
 @Directive, Input (i), Output (i), EventEmitter, ViewEncapsulation (E)
 
-
 ## Views and Querying and Accessing Content
 @ContentChild, @ContentChildren, QueryList, ElementRef, Renderer,
 Query, @ViewChildren, @ViewChild
 Sanitizer, SecurityContext, TemplateRef, ViewContainerRef, ViewRef
 (extends ChangeDetectorRef)
-
 *COMMON* NgClass, NgStyle
 *COMMON* NgFor, NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault
-
 
 ## Error Handling
 ErrorHandler
@@ -52,11 +49,8 @@ ErrorHandler
 ## Events
 EventEmitter
 
-## Services
-
 ## Pipes
 Pipe (i), PipeTransform (i), WrappedValue
-
 *COMMON* AsyncPipe, CurrencyPipe, DatePipe, DecimalPipe, JsonPipe,
 *COMMON* LowerCasePipe, PercentPipe, SlicePipe, UpperCasePipe
 
@@ -66,7 +60,6 @@ ModuleWithProviders (i), NgModule (i), NgModuleRef, NgModuleFactoryLoader
 ## Hell if I know
 HostBinding, HostListener, TrackByFn, @Type (invoke as ES7 decorator)
 VERSION, Version, enableProdMode (f)
-
 *COMMON* APP_BASE_HREF
 *COMMON* CommonModule (contains definitions for ngIf, ngFor...)
 
