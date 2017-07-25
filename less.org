@@ -1,0 +1,39 @@
+* Variables
+@nice-blue: #5B83AD;
+@light-blue: @nice-blue + #111;
+
+#header {
+  color: @light-blue;
+}
+
+* Mixins
+Just include a previously defined class or id in a style to include it's settings.
+
+.test {
+  border-top: dotted 1px black;
+}
+
+#menu a {
+  color: #111;
+  .test;
+}
+
+* Nested Rules
+#header {
+  color: black;
+
+  .navigation {
+    font-size: 12px;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+& selects the parent, #header in this case.
+
+* Operations
+Simple math is available on values with +, -, *, and /.
+
+

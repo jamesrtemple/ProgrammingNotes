@@ -24,6 +24,9 @@ Poly means many and Morphs means forms. Polymorphism refers to the
 ability to take multiple forms and it allows us to invoke derived class methods through a base class reference during run-time.
 
 * DRY, YAGNI & KISS Principles
+** Don't Repeat Yourself
+** You Aren't Going to Need It
+** Keep It Simple Stupid
 * SOLID Principles
 ** Single responsibility principle
 
@@ -370,4 +373,8 @@ pool pattern.
 
 *Thread-specific storage* Static or "global" memory local to a thread.
 
-
+* Lift
+** Locate code quickly
+** Identify the code at a glance
+** Flattest structure you can keep
+** Try to be DRY
