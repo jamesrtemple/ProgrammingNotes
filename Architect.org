@@ -1,0 +1,74 @@
+* Architecture Role
+** What is your understanding of the Software Architect role on a team?
+
+* Software Design
+** Define OOP
+*** abstraction, encapsulation, inheritance, polymorphism
+*** SOLID
+**** Drill down into DI if not mentioned
+** Define Functional Programming and how it is different from OOP
+** What are some of the most commonly used GOF patterns you are familiar with or that you have used?
+** Are you familiar with Martin Fowler's Enterprise design patterns?
+*** If so, how are they similar to or different from the GOF patterns?
+** High level question: Do you have a standard, or default architecture for mid to large scale client server systems?
+** Can you describe the MVC design pattern?
+** What purpose does message queueing serve?
+*** When is it an appropriate strategy? When is it inappropriate?
+*** When would you consider using an ESB, and when would you not?
+** What are some options available to web design when developing for desktop and mobile devices?
+** How are SPAs different from traditional web applications?
+** Can you describe what microservices are and how they might fit into a system design?
+** Opinions on why REST won out over SOAP?
+** What are the common options available for session management in a web application?
+** What are commonly used options available for front end development today?
+*** Same question for backend?
+*** How do you choose which to use on a project?
+** WHITE BOARD QUESTION: 
+*** Can you diagram a system that services an SPA with a web api living in the DMZ that must communicate to a business logic tier in the core across port 443?
+** Buy vs. build vs. open source
+*** How do you make the decision?
+
+* Databases
+** How would you approach designing a database from scratch?
+*** Gathering user requirements
+*** Choosing how to organize and relate tables?
+** What sort of considerations are involved in making sure the database performs well over time?
+** Opinions on when an O/R Mapping tool might be a better or worse choice than lower level access libraries like ODBC.net or JDBC?
+** When might you use a document database vs. a relational database?
+
+* Quality
+** What common practices can a team follow to ensure or improve code / systems quality?
+** For a complex financial system, what type of items might a checklist for definition of done include?
+** What kind of options are available for QA automation?
+
+* DevOps
+** What does the term DevOps mean to you?
+** Experience with CI/CD tools?
+** What other aspects of the team's job could be automated to improve effeciency?
+** What does the phrase 'Infrastructure as Code' mean?
+** What must a team consider when moving from large multi-month or quarterly delivery cycles to a continuous delivery model?
+
+* Agile work experience?
+** How is scrum different from a waterfall approach?
+** How can you handle scope changes and or new information that arises during a development cycle that might impact deadlines and commitments?
+
+* Security
+** What are some of the most important aspects of securing a public web application?
+** What experience do you have with the same?
+** What measures could you take to protect sensitive consumer's data within the system?
+** Can you describe public key encryption?
+** How does distributed session management work?
+
+* Reliability
+** How would you plan for Disaster Recovery to ensure minimal downtime?
+** What kind of real time monitoring and reporting is available or would you suggest to ensure application response and availability are adequate?
+
+* Given a large legacy system that has been developed over the past 20 years and that contains traces of just about every technology Microsoft has release over that time, including VB6, .Net 2, C#, SqlServer CLR objects, a lot of business logic in stored procedures, etc... how might you approach the modernization of it?
+** Have you ever worked on such a project?
+
+* Project Experience
+** Can you talk about a project that went badly and what you learned from it?
+** What about a successful project? What made it a success that you would repeat going forward?
+** Discuss over- and under-architecting a system? How do you balance complexity with maintainability? Where are the tradeoffs in systems design?
+
+* VIM vs. Emacs?
