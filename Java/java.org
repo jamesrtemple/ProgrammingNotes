@@ -1,0 +1,49 @@
+* Build Systems
+- Ant + Ivy
+- Maven
+- Gradle
+
+* Core
+public class ClassName {
+  public static void main(String[] args) {
+    // stuff
+  }
+}
+
+int, short, long, byte
+float, double  
+BigInteger, BigDecimal
+
+
+Literals
+3.14F  3.14D  500L  0xCAFE  010 
+
+char
+boolean
+  true, false
+
+final === const
+public static final double CONST = 2;
+// creates a constant accessible outside a class
+
+System.out.println('hi');
+
+Math class
+
+** Enhanced for loop
+for(variable:collection) statement
+
+** Casting
+double x = 3.14;
+int 7 = (int)x;
+
+
+** Enum
+enum Size { SMALL, MEDIUM, LARGE, EXTRA_LARGE };
+Size s = Size.LARGE;
+
+** Strings and StringBuilder
+
+** Console IO
+Scanner in = new Scanner(System.in);
+
