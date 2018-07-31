@@ -1,4 +1,5 @@
 # Three Principles
+
 ## Single Source of Truth
 The state of your application is stored in an object within a single store.
 
@@ -21,6 +22,7 @@ function visibilityFilter(state = 'SHOW_ALL', action) {
 ```
 
 # Basics
+
 ## Actions
 Payloads of information that send data from your application to your store.
 

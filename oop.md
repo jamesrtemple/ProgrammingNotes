@@ -1,80 +1,51 @@
-4 Pillars of OOP
-================
-
-Abstraction
------------
-
+# 4 Pillars of Object Oriented Programming
+## Abstraction
 Abstraction is a process of exposing essential features of an entity by hiding the other irrelevant details. Abstraction mainly reduces complexity and increases efficiency. An entity can have multiple abstractions.
 
-Encapsulation
--------------
-
+## Encapsulation
 Encapsulation is the process of putting data and the operations (functions) that can be performed on that data into a single container called class. Now, any programmer can use this class without knowing how it is implemented. Due to encapsulation, data is insulated, thus not directly accessible from the outside world. This is known as Data Hiding.
 
 Remember, Encapsulation is not data hiding, but, Encapsulation leads to data hiding.
 
-Inheritance
------------
-
+## Inheritance
 In a nutshell, inheritance is a process of creating new class from the existing one. The new class may have some additional properties and functionalitiy.
 
-Polymorphism
-------------
-
+## Polymorphism
 Poly means many and Morphs means forms. Polymorphism refers to the ability to take multiple forms and it allows us to invoke derived class methods through a base class reference during run-time.
 
-DRY, YAGNI & KISS Principles
-============================
+# DRY, YAGNI & KISS Principles
+- Don't Repeat Yourself
+- You Aren't Going to Need It
+- Keep It Simple Stupid
 
-Don't Repeat Yourself
----------------------
 
-You Aren't Going to Need It
----------------------------
-
-Keep It Simple Stupid
----------------------
-
-SOLID Principles
-================
-
-Single responsibility principle
--------------------------------
+# SOLID Principles
+## Single responsibility principle
 a class should have only a single responsibility (i.e. only one potential change in the software's specification should be able to affect the specification of the class)
 
-Open/closed principle
----------------------
+## Open/closed principle
 software entities should be open for extension, but closed for modification.
 
-Liskov substitution principle
------------------------------
+## Liskov substitution principle
 objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
 
-Interface segregation principle
--------------------------------
+## Interface segregation principle
 many client-specific interfaces are better than one general-purpose interface.
 
-Dependency inversion principle
-------------------------------
+## Dependency inversion principle
 one should Depend upon Abstractions. Do not depend upon concretions.
 
-GRASP Principles
-================
-
+# GRASP Principles
 General Responsibility Assignment Software Patterns (or Principles), abbreviated GRASP, consist of guidelines for assigning responsibility to classes and objects in object-oriented design.
 
-Controller
-----------
-
+## Controller
 The Controller pattern assigns the responsibility of dealing with system events to a non-UI class that represents the overall system or a use case scenario. A Controller object is a non-user interface object responsible for receiving or handling a system event.
 
 A use case controller should be used to deal with all system events of a use case, and may be used for more than one use case (for instance, for use cases Create User and Delete User, one can have a single UserController, instead of two separate use case controllers).
 
 It is defined as the first object beyond the UI layer that receives and coordinates ("controls") a system operation. The controller should delegate the work that needs to be done to other objects; it coordinates or controls the activity. It should not do much work itself. The GRASP Controller can be thought of as being a part of the Application/Service layer \[2\] (assuming that the application has made an explicit distinction between the application/service layer and the domain layer) in an object-oriented system with Common layers in an information system logical architecture.
 
-Creator
--------
-
+## Creator
 Creation of objects is one of the most common activities in an object-oriented system. Which class is responsible for creating objects is a fundamental property of the relationship between objects of particular classes.
 
 In general, a class B should be responsible for creating instances of class A if one, or preferably more, of the following apply:
@@ -86,28 +57,20 @@ Instances of B closely use instances of A
 Instances of B have the initializing information for instances of A and pass it on creation.
 ```
 
-High Cohesion
--------------
-
+## High Cohesion
 High Cohesion is an evaluative pattern that attempts to keep objects appropriately focused, manageable and understandable. High cohesion is generally used in support of Low Coupling. High cohesion means that the responsibilities of a given element are strongly related and highly focused. Breaking programs into classes and subsystems is an example of activities that increase the cohesive properties of a system. Alternatively, low cohesion is a situation in which a given element has too many unrelated responsibilities. Elements with low cohesion often suffer from being hard to comprehend, hard to reuse, hard to maintain and averse to change.\[3\]
 
-Indirection
------------
-
+## Indirection
 The Indirection pattern supports low coupling (and reuse potential) between two elements by assigning the responsibility of mediation between them to an intermediate object. An example of this is the introduction of a controller component for mediation between data (model) and its representation (view) in the Model-view-controller pattern. Information Expert See also: Information hiding
 
-Information Expert
-------------------
-
+## Information Expert
 (also Expert or the Expert Principle) is a principle used to determine where to delegate responsibilities. These responsibilities include methods, computed fields, and so on.
 
 Using the principle of Information Expert, a general approach to assigning responsibilities is to look at a given responsibility, determine the information needed to fulfill it, and then determine where that information is stored.
 
 Information Expert will lead to placing the responsibility on the class with the most information required to fulfill it.\[4\]
 
-Low Coupling
-------------
-
+## Low Coupling
 Low Coupling is an evaluative pattern, which dictates how to assign responsibilities to support:
 
 ``` example
@@ -116,36 +79,24 @@ change in one class having lower impact on other classes,
 higher reuse potential.
 ```
 
-Polymorphism
-------------
-
+## Polymorphism
 According to Polymorphism, responsibility of defining the variation of behaviors based on type is assigned to the types for which this variation happens. This is achieved using polymorphic operations.
 
-Protected Variations
---------------------
-
+## Protected Variations
 The Protected Variations pattern protects elements from the variations on other elements (objects, systems, subsystems) by wrapping the focus of instability with an interface and using polymorphism to create various implementations of this interface.
 
-Pure Fabrication
-----------------
-
+## Pure Fabrication
 A Pure Fabrication is a class that does not represent a concept in the problem domain, specially made up to achieve low coupling, high cohesion, and the reuse potential thereof derived (when a solution presented by the Information Expert pattern does not). This kind of class is called "Service" in Domain-driven design.
 
-Design Patterns
-===============
-
-Criticism
----------
-
+# Design Patterns
+## Criticism
 The concept of design patterns has been criticized in several ways.
 
 The design patterns may just be a sign of some missing features of a given programming language (Java or C++ for instance). Peter Norvig demonstrates that 16 out of the 23 patterns in the Design Patterns book (that is primarily focused on C++) are simplified or eliminated (via direct language support) in Lisp or Dylan. Related observations were made by Hannemann and Kiczales who implemented several of the 23 design patterns using an aspect-oriented programming language (AspectJ) and showed that code-level dependencies were removed from the implementations of 17 of the 23 design patterns and that aspect-oriented programming could simplify the implementations of design patterns. See also Paul Graham's essay "Revenge of the Nerds".
 
 *Moreover, inappropriate use of patterns may unnecessarily increase complexity.*
 
-Creational
-----------
-
+## Creational
 **Abstract factory** Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 **Builder** Separate the construction of a complex object from its representation, allowing the same construction process to create various representations.
@@ -164,9 +115,8 @@ Creational
 
 **Singleton** Ensure a class has only one instance, and provide a global point of access to it.
 
-Structural
-----------
 
+## Structural
 **Adapter or Wrapper or Translator** Convert the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces. The enterprise integration pattern equivalent is the translator.
 
 **Bridge** Decouple an abstraction from its implementation allowing the two to vary independently.
@@ -187,9 +137,8 @@ Structural
 
 **Twin** Twin allows modeling of multiple inheritance in programming languages that do not support this feature.
 
-Behavioral
-----------
 
+## Behavioral
 **Blackboard** Artificial intelligence pattern for combining disparate sources of data
 
 **Chain of responsibility** Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
@@ -220,9 +169,8 @@ Behavioral
 
 **Visitor** Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
 
-Concurrency Patterns
---------------------
 
+## Concurrency Patterns
 **Active Object** Decouples method execution from method invocation that reside in their own thread of control. The goal is to introduce concurrency, by using asynchronous method invocation and a scheduler for handling requests.
 
 **Balking** Only execute an action on an object when the object is in a particular state.
@@ -257,17 +205,8 @@ Can be unsafe when implemented in some language/hardware combinations. It can th
 
 **Thread-specific storage** Static or "global" memory local to a thread.
 
-Lift
-====
-
-Locate code quickly
--------------------
-
-Identify the code at a glance
------------------------------
-
-Flattest structure you can keep
--------------------------------
-
-Try to be DRY
--------------
+# Lift
+- Locate code quickly
+- Identify the code at a glance
+- Flattest structure you can keep
+- Try to be DRY
